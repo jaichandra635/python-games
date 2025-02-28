@@ -16,11 +16,11 @@ while guesses_left > 0:
             print("Too low!")
         else:
             print("Too high!")
-        guesses_left -= 1  # Only decrease on valid guess
+        guesses_left -= 1  
     except ValueError:
-        print("Please enter a valid number!")  # Invalid doesn’t count
+        print("Please enter a valid number!")  
 
-with open("winners.txt", "w") as file:  # Plural "winners.txt"
+with open("winners.txt", "w") as file:  
     if won:
         file.write(f"Winner: {name}")
     else:
